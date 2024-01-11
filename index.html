@@ -4,529 +4,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>M3TiiNY Words</title>
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <title>M3TIINY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script>
+     tailwind.config = {
+       darkMode: 'media',
+       theme: {
+         extend: {
+           colors: {
+             primary: {"50":"#fafaf9","100":"#f5f5f4","200":"#e7e5e4","300":"#d6d3d1","400":"#a8a29e","500":"#78716c","600":"#57534e","700":"#44403c","800":"#292524","900":"#1c1917","950":"#0c0a09"}
+           }
+         },
+         fontFamily: {
+           'body': ['Poppins'],
+           'sans': ['Poppins'],
+         }
+       }
+     }
+  </script>
+  
 </head>
 
 <body>
+  <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+          <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+              <a href="https://m3.tiiny.site" class="flex items-center">
+                  <img src="assets/img/logo/logo.png" class="mr-3 h-6 sm:h-9 dark:hidden" alt="M3TiiNY Logo" />
+                  <img src="assets/img/logo/logo-1.png" class="mr-3 h-6 sm:h-9 hidden dark:block" alt="M3TiiNY Logo" />
+              </a>
+              <div class="flex items-center lg:order-2">
+                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+              </div>
+              <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                  <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                      <li>
+                          <a href="#home" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
+                      </li>
+                      <li>
+                          <a href="https://m3tiiny.humhub.com/dashboard" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Community</a>
+                      </li>
+                      <li>
+                          <a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <section id="home" class="bg-white dark:bg-gray-900">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div class="mr-auto place-self-center lg:col-span-7">
+              <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Hello! We are M3TiiNY!</h1>
+              <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Today is January 8, 2024, we have created a group called M3TiiNY! Howl! Is anyone participating? This group is for someone who is passionate about programming!</p>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+              <img src="assets/img/hero/1.png" alt="mockup">
+          </div>                
+      </div>
+  </section>
+  <section id="about" class="bg-white dark:bg-gray-900 p-4">
+      <div class="bg-primary-700 rounded-lg gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-white sm:text-lg">
+              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">We don't have any donuts!</h2>
+              <p class="mb-4">We dont have any donuts to copy in our projects! And then we have to DIM (do it myself)!</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+              <img class="w-full rounded-lg" src="assets/img/hero/2.png" alt="office content 1">
+              <img class="mt-4 w-full lg:mt-10 rounded-lg" src="assets/img/hero/3.png" alt="office content 2">
+          </div>
+      </div>
+  </section>
+  <section id="contact" class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Contact us for the fantastic support </p>
+        <form action="https://formsubmit.co/lumiereanderson@gmail.com" method="POST" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input name="email" type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@example.com" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input name="subject" type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                <input type="hidden" name="_subject" value="New submission!">
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
+                <input type="hidden" name="_next" value="https://m3.tiiny.site/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Hi! Are you here? Hmm... we're here! And what problem you want to troubleshoot? Feedback? And... what?">
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+        </form>
+    </div>
+  </section>
   
-  <div class="logo">
-    <img id="logo" class="logo-img" src="assets/img/logo/logo.png" />
-  </div>
-  <div class="loader">
-    <div class="cdx-loader"></div>
-    <div class="loader-text"></div>
-  </div> 
-  <div contenteditable id="editorjs"></div>
-  <div>
-    <pre id="output"></pre>
-  </div>
-  <script src="assets/js/editor.js"></script>
-  <script src="assets/js/plugin/header.js"></script>
-  <script src="assets/js/plugin/simple-image.js"></script>
-  <script src="assets/js/plugin/delimiter.js"></script>
-  <script src="assets/js/plugin/list.js"></script>
-  <script src="assets/js/plugin/checklist.js"></script>
-  <script src="assets/js/plugin/quote.js"></script>
-  <script src="assets/js/plugin/code.js"></script>
-  <script src="assets/js/plugin/embed.js"></script>
-  <script src="assets/js/plugin/table.js"></script>
-  <script src="assets/js/plugin/link.js"></script>
-  <script src="assets/js/plugin/warning.js"></script>
-  <script src="assets/js/plugin/tooltip.js"></script>
-  <script src="assets/js/plugin/marker.js"></script>
-  <script src="assets/js/plugin/inline-code.js"></script>
-  <script src="assets/js/plugin/drag-drop.js"></script>
-  <script src="assets/js/plugin/underline.js"></script>
-  <script src="assets/js/plugin/undo.js"></script>
-  <script src="assets/js/plugin/alert.js"></script>
-  <script src="assets/js/plugin/toggle-block.js"></script>
-  <script src="assets/js/plugin/paragraph-with-alignment.js"></script>
-  <script src="assets/js/plugin/style.js"></script>
-  <script src="assets/js/plugin/color.js"></script>
-  <script src="assets/js/plugin/link-autocomplete.js"></script>
-  <script src="assets/js/plugin/text-alignment-blocktune.js"></script>
-  <script src="assets/js/plugin/layout.js"></script>
-  <script src="assets/js/plugin/inline-template.js"></script>
-  <script src="assets/js/plugin/button.js"></script>
-  <script src="assets/js/plugin/mermaid.js"></script>
-  <script src="assets/js/plugin/anchortune.js"></script>
-  <script src="assets/js/plugin/annotation.js"></script>
-  <script src="assets/js/plugin/notice.js"></script>
-  <script src="assets/js/plugin/fontfamily.js"></script>
-  <script src="assets/js/plugin/strikethrough.js"></script>
-  <script src="assets/js/plugin/hyperlink.js"></script>
-  <script src="assets/js/plugin/nested-list.js"></script>
-  <script src="assets/js/plugin/raw.js"></script>
-  <script src="assets/js/plugin/footnotes.js"></script>
-  <script src="assets/js/plugin/image.js"></script>
-  <script src="assets/js/plugin/markdown-parser.js"></script>
-  
-  <script>
-    class SimpleImage {
-      constructor(){
-        this.data = data;
-        this.wrapper = undefined;
-      }
 
-      // ... previously added methods
+  <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://m3.tiiny.site" class="hover:underline">M3TiiNY</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+              <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a href="https://m.me/j/AbbDdzhDFYKfAY_M/" class="hover:underline me-4 md:me-6">Messenger Chat</a>
+          </li>
+          <li>
+              <a href="https://discord.gg/VBCwc8SsTJ" class="hover:underline me-4 md:me-6">Discord</a>
+          </li>
+          <li>
+              <a href="#contact" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+      </div>
+  </footer>
 
-      renderSettings(){
-        const settings = [
-          {
-            name: 'withBorder',
-            icon: `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M15.8 10.592v2.043h2.35v2.138H15.8v2.232h-2.25v-2.232h-2.4v-2.138h2.4v-2.28h2.25v.237h1.15-1.15zM1.9 8.455v-3.42c0-1.154.985-2.09 2.2-2.09h4.2v2.137H4.15v3.373H1.9zm0 2.137h2.25v3.325H8.3v2.138H4.1c-1.215 0-2.2-.936-2.2-2.09v-3.373zm15.05-2.137H14.7V5.082h-4.15V2.945h4.2c1.215 0 2.2.936 2.2 2.09v3.42z"/></svg>`
-          },
-          {
-            name: 'stretched',
-            icon: `<svg width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg"><path d="M13.568 5.925H4.056l1.703 1.703a1.125 1.125 0 0 1-1.59 1.591L.962 6.014A1.069 1.069 0 0 1 .588 4.26L4.38.469a1.069 1.069 0 0 1 1.512 1.511L4.084 3.787h9.606l-1.85-1.85a1.069 1.069 0 1 1 1.512-1.51l3.792 3.791a1.069 1.069 0 0 1-.475 1.788L13.514 9.16a1.125 1.125 0 0 1-1.59-1.591l1.644-1.644z"/></svg>`
-          },
-          {
-            name: 'withBackground',
-            icon: `<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.043 8.265l3.183-3.183h-2.924L4.75 10.636v2.923l4.15-4.15v2.351l-2.158 2.159H8.9v2.137H4.7c-1.215 0-2.2-.936-2.2-2.09v-8.93c0-1.154.985-2.09 2.2-2.09h10.663l.033-.033.034.034c1.178.04 2.12.96 2.12 2.089v3.23H15.3V5.359l-2.906 2.906h-2.35zM7.951 5.082H4.75v3.201l3.201-3.2zm5.099 7.078v3.04h4.15v-3.04h-4.15zm-1.1-2.137h6.35c.635 0 1.15.489 1.15 1.092v5.13c0 .603-.515 1.092-1.15 1.092h-6.35c-.635 0-1.15-.489-1.15-1.092v-5.13c0-.603.515-1.092 1.15-1.092z"/></svg>`
-          }
-        ];
-        const wrapper = document.createElement('div');
-
-        settings.forEach( tune => {
-          let button = document.createElement('div');
-
-          button.classList.add('cdx-settings-button');
-          button.innerHTML = tune.icon;
-          wrapper.appendChild(button);
-        });
-
-        return wrapper;
-      }
-    }
-    const ColorPlugin = window.ColorPlugin;
-    var editorJSConfig = {};
-    const Carousel = window.Carousel;
-    var editor = new EditorJS({
-        /**
-         * Create a holder for the Editor and pass its ID
-         */
-        holder : 'editorjs',
-        /**
-         * Available Tools list.
-         * Pass Tool's class or Settings object for each Tool you want to use
-         */
-        readOnly: false,
-      
-        inlineToolbar: true,
-        tools: {
-          header: {
-            class: Header,
-            inlineToolbar: true,
-            config: {
-              placeholder: 'Enter a heading',
-              levels: [1, 2, 3, 4],
-              defaultLevel: 3,
-              defaultAlignment: 'left'
-            },
-            shortcut: 'CMD+SHIFT+H'
-          },
-          footnotes: {
-            class: FootnotesTune,
-            config: {
-              placeholder: 'Type your footnotes',
-              shortcut: 'CMD+SHIFT+F',
-            },
-          },
-          markdownParser: MDParser,
-          markdownImporter: MDImporter,
-          Color: {
-            class: ColorPlugin, // if load from CDN, please try: window.ColorPlugin
-            config: {
-               colorCollections: ['#EC7878','#9C27B0','#673AB7','#3F51B5','#0070FF','#03A9F4','#00BCD4','#4CAF50','#8BC34A','#CDDC39', '#FFF'],
-               defaultColor: '#FF1300',
-               type: 'text', 
-               customPicker: true // add a button to allow selecting any colour  
-            }     
-          },
-          mermaid: MermaidTool,
-          fontFamily: FontFamilyTool,
-          hyperlink: {
-            class: Hyperlink,
-            config: {
-              shortcut: 'CMD+L',
-              target: '_blank',
-              rel: 'nofollow',
-              availableTargets: ['_blank', '_self'],
-              availableRels: ['author', 'noreferrer'],
-              validate: false,
-            }
-          },
-          raw: {
-            class: RawTool,
-            config: {
-              placeholder: 'Enter raw HTML',
-              shortcut: 'CMD+R',
-            }
-          },
-          style: EditorJSStyle.StyleInlineTool,
-          underline: {
-            class: Underline,
-            config: {
-              shortcut: 'CMD+U',
-            }
-          },
-          toggle: {
-            class: ToggleBlock,
-            inlineToolbar: true,
-          },
-          annotation: Annotation,
-          noticeTune: NoticeTune,
-          paragraph: {
-            class: Paragraph,
-            inlineToolbar: true,
-            shortcut: 'CMD+SHIFT+T',
-            config: {
-              placeholder: 'Enter text',
-            }
-          },
-          
-          image: {
-            class: ImageTool,
-            inlineToolbar: true,
-            config: {
-              placeholder: 'Paste image URL',
-              endpoints: {
-                byFile: 'https://webhook.site/5093070f-e38d-463e-88e3-2893c662ccc1'
-              }
-            },
-            shortcut: 'CMD+I'
-          },
-          AnyButton: {
-            class: AnyButton,
-            inlineToolbar: false,
-            config:{
-              css:{
-                "btnColor": "btn--gray",
-              }
-            },
-            shortcut: 'CMD+ALT+B'
-          },
-          anchorTune: AnchorTune,
-          template: {
-            class: EditorJSInlineTemplate.TemplateInlineTool,
-            config: {
-              buttonHTML: `
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                  <path d="M336 64h32a48 48 0 0148 48v320a48 48 0 01-48 48H144a48 48 0 01-48-48V112a48 48 0 0148-48h32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/>
-                  <rect x="176" y="32" width="160" height="64" rx="26.13" ry="26.13" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/>
-                </svg>
-              `,
-              html: "<b>template</b>⭐",
-            },
-          },
-          list: {
-            class: List,
-            inlineToolbar: true,
-            config: {
-              defaultStyle: 'unordered'
-            },
-            shortcut: 'CMD+SHIFT+L'
-          },
-
-          checklist: {
-            class: Checklist,
-            inlineToolbar: true,
-          },
-          delimiter: Delimiter,
-          
-          quote: {
-            class: Quote,
-            inlineToolbar: true,
-            config: {
-              quotePlaceholder: 'Enter a quote',
-              captionPlaceholder: 'Quote\'s author',
-            },
-            shortcut: 'CMD+SHIFT+O'
-          },
-          warning: Warning,
-          
-          marker: {
-            class: ColorPlugin,
-            shortcut: 'CMD+SHIFT+M'
-          },
-
-          code: {
-            class:  CodeTool,
-            shortcut: 'CMD+SHIFT+C',
-            config: {
-              placeholder: 'Enter code',
-            }
-          },
-
-          delimiter: Delimiter,
-
-          inlineCode: {
-            class: InlineCode,
-            shortcut: 'CMD+SHIFT+C'
-          },
-
-          linkTool: LinkTool,
-          link: {
-            class: LinkAutocomplete,
-            config: {
-              endpoint: 'https://webhook.site/5093070f-e38d-463e-88e3-2893c662ccc1',
-              queryParam: 'search'
-            }
-          },
-
-          embed: {
-            class: Embed,
-            inlineToolbar: true,
-            config: {
-              services: {
-                youtube: true,
-                coub: true,
-                vimeo: true,
-                vk: true,
-                facebook: true,
-                instagram: true,
-                twitter: true,
-                miro: true,
-                aparat: true,
-                codepen: true,
-                github: true,
-                vine: true,
-                gfycat: true,
-                imgur: true,
-                pinterest: true
-              },
-            },
-            shortcut: 'CMD+SHIFT+E'
-          },
-
-          table: {
-            class: Table,
-            inlineToolbar: true,
-            config: {
-              rows: 2,
-              cols: 3,
-              withHeadings: true,
-            },
-            shortcut: 'CMD+ALT+T'
-          },
-          alert: {
-            class: Alert,
-            inlineToolbar: true,
-            shortcut: 'CMD+SHIFT+A',
-            config: {
-              defaultType: 'primary',
-              messagePlaceholder: 'Enter something',
-            },
-          },
-          tooltip: {
-            class: Tooltip,
-            config: {
-              location: 'left',
-              highlightColor: '#FFEFD5',
-              underline: true,
-              backgroundColor: '#154360',
-              textColor: '#FDFEFE',
-              holder: 'editorjs',
-            }
-          },
-          strikethrough: {
-            class: Strikethrough,
-            shortcut: 'CMD+SHIFT+X',
-          },
-          layout: {
-            class: EditorJSLayout.LayoutBlockTool,
-            config: {
-              EditorJS,
-              editorJSConfig,
-              enableLayoutEditing: false,
-              enableLayoutSaving: true,
-              initialData: {
-                itemContent: {
-                  1: {
-                    blocks: [],
-                  },
-                },
-                layout: {
-                  type: "container",
-                  id: "",
-                  className: "",
-                  style: "border: 1px solid #000000; ",
-                  children: [
-                    {
-                      type: "item",
-                      id: "",
-                      className: "",
-                      style: "border: 1px solid #000000; display: inline-block; ",
-                      itemContentId: "1",
-                    },
-                  ],
-                },
-              },
-            },
-          },
-          twoColumns: {
-            class: EditorJSLayout.LayoutBlockTool,
-            config: {
-              EditorJS,
-              editorJSConfig,
-              enableLayoutEditing: false,
-              enableLayoutSaving: false,
-              initialData: {
-                itemContent: {
-                  1: {
-                    blocks: [],
-                  },
-                  2: {
-                    blocks: [],
-                  },
-                },
-                layout: {
-                  type: "container",
-                  id: "",
-                  className: "",
-                  style:
-                    "border: 1px solid #000000; display: flex; justify-content: space-around; padding: 16px; ",
-                  children: [
-                    {
-                      type: "item",
-                      id: "",
-                      className: "",
-                      style: "border: 1px solid #000000; padding: 8px; ",
-                      itemContentId: "1",
-                    },
-                    {
-                      type: "item",
-                      id: "",
-                      className: "",
-                      style: "border: 1px solid #000000; padding: 8px; ",
-                      itemContentId: "2",
-                    },
-                  ],
-                },
-              },
-            },
-            shortcut: "CMD+2",
-            toolbox: {
-              icon: `
-                <svg xmlns='http://www.w3.org/2000/svg' width="16" height="16" viewBox='0 0 512 512'>
-                  <rect x='128' y='128' width='336' height='336' rx='57' ry='57' fill='none' stroke='currentColor' stroke-linejoin='round' stroke-width='32'/>
-                  <path d='M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/>
-                </svg>
-              `,
-              title: "2 columns",
-            },
-          },
-        },
-        tunes: ['anchorTune', 'noticeTune', 'footnotes'],
-        placeholder: 'Write your awesome content',
-        logLevel: 'VERBOSE',
-        autofocus: true,
-        
-        /**
-         * Previously saved data that should be rendered
-         */
-        data: {
-          time : 1550476186479,
-          blocks: [
-            {
-              id: "l98dyx3yjb",
-              type: "header",
-              data: {
-                text: "Welcome to M3TiiNY Words",
-                level: 1,
-              },
-            },
-            {
-              id: "mhTl6ghSkV",
-              type: "paragraph",
-              data: {
-                text: "The simplest editor of M3TiiNY",
-              },
-            },
-            {
-              id: "l98dyx3yjb",
-              type: "header",
-              data: {
-                text: "Key features",
-                level: 3,
-              },
-            },
-            {
-              id: "os_YI4eub4",
-              type: "list",
-              data: {
-                type: "unordered",
-                items: [
-                "It is a block-style document HTML software",
-                "Simply. No complex",
-                "Designed for the great experiment",
-                ] ,
-              } ,
-            },
-            {
-              id: "l98dyx3yjb",
-              type: "header",
-              data: {
-                text: " Get started with M3TiiNY Words",
-                level: 3,
-              },
-            },
-            {
-              id: "os_YI4eub4",
-              type: "list",
-              data: {
-                type: "ordered",
-                items: [
-                "Plus: Tap + and add an element. Or you can do a keyboard operation with shortcuts",
-                "Enter a text and highlight the text, you will see the text toolbar.",
-                "There is no toolbar. Make it the simplest editor for the easy document editing",
-                  "Edit the content and then save the content directly as an markdown(.md) file."
-                ] ,
-              } ,
-            },
-            {
-              id: "hZAjSnqYMX",
-              type: "image",
-              data: {
-                file: {
-                  url: "assets/img/logo/logo.png",
-                } ,
-                withBorder: false,
-                withBackground: false,
-                stretched: true,
-                caption: "M3TiiNY Logo",
-              },
-            },
-          ],
-          version: "2.28.2"
-        },
-        
-        onReady: () => {
-          new Undo({ editor });
-          new DragDrop(editor);
-          MermaidTool.config({ 'theme': 'neutral' })
-        },
-    });
-
-    setTimeout(() => {
-      document.getElementById('editorjs').style.display = 'block';
-      document.querySelector('.cdx-loader').style.display = 'none';
-      document.querySelector('.loader').style.display = 'none';
-      document.querySelector('.loader-text').style.display = 'none';
-      document.querySelector('.logo').style.display = 'block';
-      document.querySelector('.logo-img').style.display = 'block';
-    }, 5000);
-
-    function loading() {
-      setTimeout(() => {
-        document.querySelector('.loader-text').innerHTML = 'Loading...';
-      }, 15000);
-    }
-
-    loading () 
-  </script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
 </html>
