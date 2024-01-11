@@ -9,5 +9,8 @@ M3TiiNY is a group of young people specializing in programming software related 
 - [Discord](https://discord.gg/CYDKq2JK75)
 - [GitHub](https://github.com/m3tiinyofficial)
 
+# Projects
+- [M3TiiNY Words](https://github.com/m3tiinyofficial/wordsbym3tiiny)
+
 # Contact
 [dayn01914@gmail.com](mailto:dayn01914@gmail.com)
