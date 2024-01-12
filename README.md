@@ -1,16 +1,16 @@
-![M3TiiNY Logo](assets/img/hero/56907701-FEB1-4A3A-8F16-65DD5BAB8B9F.png)
-# M3TiiNY Official
+![かわい猫](assets/img/hero/56907701-FEB1-4A3A-8F16-65DD5BAB8B9F.png)
+# かわい猫 公式の
 
-M3TiiNY is a group of young people specializing in programming software related to collaboration and socialization tools/websites in frontend, backend, or other programming languages. Established in Hai Phong on January 8, 2024. This group is for people between 15 and 20 years old. This is a group of friends who are passionate about computer programming.
+かわい猫は、フロントエンド、バックエンド、またはその他のプログラミング言語のコラボレーションおよび社会化ツール/ウェブサイトに関連するプログラミングソフトウェアを専門とする若者のグループです。2024年1月8日にハイフォンで設立されました。このグループは15歳から20歳までの人向けです。これは、コンピュータプログラミングに情熱を注いでいる友人のグループです。
 
-# Links
-- [Connumity](https://m3tiiny.humhub.com)
-- [Messenger Chat Group](https://m.me/j/AbbDdzhDFYKfAY_M/)
-- [Discord](https://discord.gg/CYDKq2JK75)
+# 左の
+- [コンヌシティ](https://m3tiiny.humhub.com)
+- [メッセンジャーチャットグループ](https://m.me/j/AbbDdzhDFYKfAY_M/)
+- [不和](https://discord.gg/CYDKq2JK75)
 - [GitHub](https://github.com/m3tiinyofficial)
 
 # Projects
-- [M3TiiNY Words](https://github.com/m3tiinyofficial/wordsbym3tiiny)
+- [かわい猫の言葉](https://github.com/m3tiinyofficial/words)
 
 # Contact
 [dayn01914@gmail.com](mailto:dayn01914@gmail.com)
